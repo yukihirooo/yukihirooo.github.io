@@ -12,14 +12,15 @@
 <body>
 
 <h1>プライバシーポリシー</h1>
-<p class="updated">どのタナ（DonoTana）／ 最終更新日: 2026年7月21日</p>
+<p class="updated">どのタナ（DonoTana）／ 最終更新日: 2026年7月22日</p>
 
 <h2>いちばん大事なこと</h2>
 <p>
-「どのタナ」は、あなたが書いたものを<strong>いっさい収集しません</strong>。
-このアプリにはサーバーがなく、アカウント登録もなく、あなたのデータを送信する先がそもそも存在しません。
+「どのタナ」は、<strong>あなたが書いたものを送信しません</strong>。
 記録した人・予定・写真・メモは、すべて<strong>あなたの端末の中だけ</strong>にあります。
-開発者もそれを見ることはできません。
+開発者がそれを見ることはできません。
+アプリを良くするために、誰のものか分からない形の利用統計だけをお預かりしています
+（<a href="#stats">くわしく</a>）。
 </p>
 
 <h2>端末内に保存されるもの</h2>
@@ -51,7 +52,7 @@
 <h2>場所の検索について</h2>
 <p>
 予定を作るときに場所を検索した場合にかぎり、入力した検索語が Apple のマップサービスに送信されます。
-これはこのアプリで<strong>唯一の通信</strong>です。
+地図の検索は、利用統計とは別のしくみです。
 このとき<strong>あなたの現在地は取得しません</strong>（アプリは位置情報の権限を一切要求しません）。
 送信されるのはあなたが打ち込んだ文字だけで、アプリ内の人物や記録の情報が一緒に送られることはありません。
 検索結果の取り扱いについては Apple のプライバシーポリシーに従います。
@@ -64,24 +65,47 @@
 アプリはあなたがどのプランを利用できるかを Apple から受け取るだけです。
 </p>
 
+<h2 id="stats">利用統計について</h2>
+<p>
+どの機能が使われていて、どこで手が止まっているのかを知るために、
+アプリの利用状況を<strong>匿名で</strong>記録しています（TelemetryDeck というサービスを使っています）。
+</p>
+<p><strong>送っているもの</strong>（これがすべてです）</p>
+<ul>
+  <li>アプリを開いた、はじめの説明を終えた</li>
+  <li>人を追加した／段階を動かした／おでかけを記録した／よていを立てた</li>
+  <li>プランの案内が出た／購入した／有料機能をオンにした</li>
+  <li>上の数量は「3〜5人」のような<strong>幅</strong>にまるめています</li>
+</ul>
+<p><strong>送っていないもの</strong></p>
+<ul>
+  <li>名前、メモ、タグ、場所、日時、写真 — <strong>あなたが書いたものは一切</strong></li>
+  <li>連絡先、位置情報、広告ID</li>
+</ul>
+<p>
+何人が使っているかを数えるために、端末から作られる符号を、元に戻せない形に変換して送っています。
+それが誰なのかは開発者にも分からず、あなたが書いた内容とは結びついていません。
+この形でしか集めていないため、オン・オフの設定は設けていません。
+</p>
+
 <h2>行っていないこと</h2>
 <ul>
-  <li>アクセス解析・行動計測ツールの一切の利用</li>
   <li>広告および広告 ID の利用</li>
   <li>第三者へのデータの提供・販売・共有</li>
-  <li>クラッシュログや利用状況の自動送信</li>
-  <li>トラッキング（他社のアプリやサイトをまたいだ追跡）</li>
+  <li>あなたが書いた内容の送信・保管</li>
+  <li>トラッキング（他社のアプリやサイトをまたいだ追跡。許可を求めるダイアログも出しません）</li>
 </ul>
 
 <h2>お子さまのプライバシー</h2>
 <p>
-このアプリは個人情報を収集しないため、年齢を問わず収集される情報はありません。
+このアプリは個人を特定できる情報を収集しないため、年齢を問わず、特定の個人に結びつく情報はありません。
 </p>
 
 <h2>データの削除</h2>
 <p>
 記録は端末内にのみ存在するため、iPhone からアプリを削除すれば、そのデータも削除されます。
-開発者側に保管されているものはないため、削除を依頼する必要はありません。
+利用統計は誰のものか分からない形で集計されているため、
+あなたの分だけを取り出して削除することはできません（そもそも、どれがあなたの分か分からないためです）。
 </p>
 
 <h2>このポリシーの変更</h2>
@@ -99,13 +123,14 @@
 
 <div class="alt" lang="en">
 <h1>Privacy Policy</h1>
-<p class="updated">DonoTana / Last updated: July 21, 2026</p>
+<p class="updated">DonoTana / Last updated: July 22, 2026</p>
 
 <h2>The short version</h2>
 <p>
-DonoTana collects <strong>nothing</strong>. The app has no server, no account, and
-nowhere to send your data. Everything you record — people, plans, photos, notes —
-stays on your device. The developer cannot see any of it.
+DonoTana <strong>does not send what you write anywhere</strong>. Everything you record —
+people, plans, photos, notes — stays on your device, and the developer cannot see
+any of it. To improve the app, anonymous usage statistics are collected
+(<a href="#stats-en">details</a>).
 </p>
 
 <h2>What is stored on your device</h2>
@@ -135,7 +160,7 @@ never shown the permission dialog.
 <h2>Place search</h2>
 <p>
 If you search for a place while making a plan, your search text is sent to Apple's
-map service. This is the <strong>only</strong> network request the app makes. Your location is
+map service, separately from the usage statistics above. Your location is
 <strong>not</strong> used — the app never requests location permission — and no information about
 the people or records in your app is sent along with it. Apple's privacy policy
 governs how the search itself is handled.
@@ -148,23 +173,47 @@ the developer and are never stored by the developer. The app only learns which p
 you are entitled to.
 </p>
 
+<h2 id="stats-en">Usage statistics</h2>
+<p>
+To learn which features are used and where people get stuck, the app records
+usage <strong>anonymously</strong> through a service called TelemetryDeck.
+</p>
+<p><strong>What is sent</strong> — this is the complete list:</p>
+<ul>
+  <li>App opened; intro finished</li>
+  <li>A person added; a stage moved; a meeting recorded; a plan created</li>
+  <li>The plan screen shown; a purchase made; a paid feature switched on</li>
+  <li>Counts are rounded into ranges such as "3–5", never exact numbers</li>
+</ul>
+<p><strong>What is never sent</strong></p>
+<ul>
+  <li>Names, notes, tags, places, dates, photos — <strong>nothing you wrote</strong></li>
+  <li>Contacts, location, advertising identifiers</li>
+</ul>
+<p>
+To count how many people use the app, a code derived from your device is
+converted into a form that cannot be turned back. The developer cannot tell whose
+it is, and it is connected to nothing you wrote. Because that is the only form
+the data takes, there is no on/off switch for it.
+</p>
+
 <h2>What the app does not do</h2>
 <ul>
-  <li>No analytics or usage measurement of any kind</li>
   <li>No advertising and no advertising identifiers</li>
   <li>No sharing, selling, or disclosure of data to third parties</li>
-  <li>No automatic crash or usage reporting</li>
-  <li>No tracking across other apps or websites</li>
+  <li>No sending or storing of anything you wrote</li>
+  <li>No tracking across other apps or websites — you are never shown a tracking prompt</li>
 </ul>
 
 <h2>Children's privacy</h2>
 <p>
-The app collects no personal information from anyone, at any age.</p>
+The app collects no personally identifying information from anyone, at any age.</p>
 
 <h2>Deleting your data</h2>
 <p>
-Because records exist only on your device, deleting the app deletes the data. There
-is nothing held by the developer, so there is no deletion request to make.
+Because records exist only on your device, deleting the app deletes the data.
+Usage statistics are aggregated anonymously, so your share of them cannot be
+singled out and removed — there is no way to tell which share is yours.
 </p>
 
 <h2>Changes to this policy</h2>
